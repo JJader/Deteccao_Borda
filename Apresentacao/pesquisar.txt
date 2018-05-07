@@ -1,8 +1,8 @@
+					REFERÊNCIA
 ponto de inflexão --> é o ponto onde há a maior variação ; onde a derivada é maior
 
 
-
-https://www.youtube.com/watch?v=bdnBfu0-aEA
+https://www.youtube.com/watch?v=bdnBfu0-aEA // Só legal para ver o que a gente pode fazer
 
 
 https://docs.gimp.org/2.8/pt_BR/plug-in-convmatrix.html
@@ -11,5 +11,30 @@ https://docs.gimp.org/2.8/pt_BR/plug-in-convmatrix.html
 https://www.youtube.com/watch?v=XuD4C8vJzEQ
 https://www.youtube.com/watch?v=C_zFhWdM4ic
 https://www.youtube.com/watch?v=uihBwtPIBxM
+https://www.youtube.com/watch?https://www.youtube.com/watch?v=sRFM5IEqR2w//detecção por canny
+https://www.youtube.com/watch?v=Ix-przhnKhQ//rinoceironte
+
+v=msSrguVK2_A&t=1802s&list=PLHvt8Ovc8swyDb2TQi9Tip48FSIg5rERX&index=8 // 27minutos
+https://www.youtube.com/watch?v=GnD4Z3JvyNk&t=67s&list=PLHvt8Ovc8swyDb2TQi9Tip48FSIg5rERX&index=11
+
 
 alanacx@gmail.com
+
+-----------------------------------------------------------------------------------------------
+					APRESENTAÇÃO
+-->Apresentação de Histograma;
+-->Apresentação dos pixels da imagem como matriz;
+	*Original;
+	*Preto e branco;
+	*Borda;
+-->Demonstrar método de canny;
+-->Introduzir a aplicação de contorno na medição de um objeto;
+
+-----------------------------------------------------------------------------------------------
+					PESQUISAS			
+-->Desenvolver algoritmo final
+	*Encontar o tamanho por pixel;
+	*Fazer os testes com régua e encontrar a relação de (distância e tamanho);
+	*Mostrar o tamanho na janela;
+
+-----------------------------------------------------------------------------------------------
