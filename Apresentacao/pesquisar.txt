@@ -1,5 +1,5 @@
+					REFERÊNCIA
 ponto de inflexão --> é o ponto onde há a maior variação ; onde a derivada é maior
-
 
 
 https://www.youtube.com/watch?v=bdnBfu0-aEA
@@ -13,3 +13,22 @@ https://www.youtube.com/watch?v=C_zFhWdM4ic
 https://www.youtube.com/watch?v=uihBwtPIBxM
 
 alanacx@gmail.com
+
+-----------------------------------------------------------------------------------------------
+					APRESENTAÇÃO
+-->Apresentação de Histograma;
+-->Apresentação dos pixels da imagem como matriz;
+	*Original;
+	*Preto e branco;
+	*Borda;
+-->Demonstrar método de canny;
+-->Introduzir a aplicação de contorno na medição de um objeto;
+
+-----------------------------------------------------------------------------------------------
+					PESQUISAS			
+-->Desenvolver algoritmo final
+	*Encontar o tamanho por pixel;
+	*Fazer os testes com régua e encontrar a relação de (distância e tamanho);
+	*Mostrar o tamanho na janela;
+
+-----------------------------------------------------------------------------------------------
