@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿# Deteccao_Borda
+=======
+# Deteccao_Borda
+>>>>>>> 9b13cd5c10448cea421148612e0aa2b3676b01cb
 <head>
 </head>
 <body>
@@ -17,4 +21,8 @@ scilab<br/>
 <p>
 --> apresentação: slides da apresentação em sala de aula<br/>
 </p>
+<<<<<<< HEAD
 </body>
+=======
+</body>
+>>>>>>> 9b13cd5c10448cea421148612e0aa2b3676b01cb
