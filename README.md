@@ -16,7 +16,7 @@
 </pre>
 <hr color="gray" width="70%" size = "5px">
 
-<h1>REFERENCIAL BIBLIOGRÁFICO</h1>
+<h1>REFERENCIAL BIBLIOGRÁFICO SOBRE DETECÇÃO DE BORDA</h1>
 
 <code>
 <pre>
@@ -33,7 +33,17 @@
 </code>
 <hr color="gray" width="70%" size = "5px">
 
-<h1>APRESENTAÇÃO</h1>
+<h1>REFERENCIAL BIBLIOGRÁFICO SOBRE OPENCV</h1>
+<pre>
+<code>
+<a href=https://www.youtube.com/watch?v=8XGKOTuiHJo&t=3s>Instalando OPENCV no visual</a></br>
+<a href="https://docs.opencv.org/2.4/modules/core/doc/drawing_functions.html#void%20putText(Mat&%20img,%20const%20string&%20text,%20Point%20org,%20int%20fontFace,%20double%20fontScale,%20Scalar%20color,%20int%20thickness,%20int%20lineType,%20bool%20bottomLeftOrigin)">PutText - texto na imagem </a></br>
+
+</code>
+</pre>
+<hr color="gray" width="70%" size = "5px">
+
+<h1>APRESENTAÇÃO 2</h1>
 <pre>
 	-->Apresentação de Histograma;
 	-->Apresentação dos pixels da imagem como matriz;
