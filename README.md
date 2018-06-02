@@ -38,7 +38,8 @@
 <code>
 <a href=https://www.youtube.com/watch?v=8XGKOTuiHJo&t=3s>Instalando OPENCV no visual</a></br>
 <a href="https://docs.opencv.org/2.4/modules/core/doc/drawing_functions.html#void%20putText(Mat&%20img,%20const%20string&%20text,%20Point%20org,%20int%20fontFace,%20double%20fontScale,%20Scalar%20color,%20int%20thickness,%20int%20lineType,%20bool%20bottomLeftOrigin)">PutText - texto na imagem </a></br>
-
+<a href="https://homepages.dcc.ufmg.br/~william/teaching/2013_02/OP/slides/aula03%20-%20OpenCV.pdf">Trabalhando com Mat</a></br>
+<a href= "http://www.uio.no/studier/emner/matnat/its/UNIK4690/v18/labs/kompendium_maskinsyn.pdf">Ideias legais para utilizar com o Mat</a>
 </code>
 </pre>
 <hr color="gray" width="70%" size = "5px">
