@@ -5,14 +5,8 @@
 #include <stdlib.h>
 #include <conio.h>
 
-
 using namespace std;
 using namespace cv;
-
-
-
-
-
 
 int main(void) {
 //_______________________________________________________________________________________________________________________________
@@ -21,7 +15,7 @@ int main(void) {
 int a, b, aux1 = 1, aux2 = 1, aux3 = 1; // <a,b> Configuração do filtro; <aux1> While; <aux2>; <aux3> Save da imagem
 int name = 0, nome = 0, tam[3]; // <name> Nome da borda; <nome> Nome da imagem; <tam> posição da borda
 int col, row; // <col> Coluna da borda; <row> linha da borda
-int pc = 100, pl = 50, sc = 540, sl = 430;
+int pc = 100, pl = 100, sc = 440, sl = 430;
 string op; // <op> String tratada pelo if
 Mat img; // <img> matriz da imagem
 Mat borda; // <img> matriz da borda
@@ -36,15 +30,33 @@ b = 100;
 while (aux1 == 1) {
 
 	cam.read(img);
-	Canny(img, borda, a, b); // Transformar img em borda com o método canny
+	Canny(img, borda, a, b,3); // Transformar img em borda com o método canny
+	
+
 //______________________________________________________________________________________________________________________________
 //Bloco para encontrar o tamanho da imagem 
-	col = borda.cols;
-	row = borda.rows;
-	for (int y = 0; y < col; y++) {
-		for (int x = 0; x < row; x++) {
-			if (borda.at<uchar>(x, y) == 255 && aux3 == 1) { tam[0] = y;	aux3++; }
-			else if (borda.at<uchar>(x, y) == 255) { tam[1] = y; }
+	col = img.cols;
+	row = img.rows;
+
+	if (pl>sl)
+	{
+		aux2 = pl;
+		pl = sl;
+		sl = aux2;
+		aux2 = 1;
+	}
+	if(pc>sc)
+	{
+		aux2 = pc;
+		pc = sc;
+		sc = aux2;
+		aux2 = 1;
+	}
+
+	for (int y = pl; y <= sl; y++) {
+		for (int x = pc; x <= sc; x++) {
+			if (borda.at<uchar>(y, x) == 255 && aux3 == 1) { tam[0] = y; aux3++; }
+			else if (borda.at<uchar>(y, x) == 255) { tam[1] = y; }
 			//printf("%d ", (borda.at<uchar>(x, y)));
 		}
 			//printf(";\n");
@@ -57,7 +69,7 @@ while (aux1 == 1) {
 //Bloco paraTratamento da tela
 
 	putText(img, tamanho.str(), { 0,475 }, CV_FONT_HERSHEY_SIMPLEX, 1, { 0,255,0 }, 3, cv::LINE_AA);
-	rectangle(img, { 100,50 }, { 540,430 }, { 0,255,0 }, 2, cv::LINE_AA, 0);
+	rectangle(img, { pc,pl }, { sc,sl}, { 0,255,0 }, 2, cv::LINE_AA, 0);
 	imshow("WebCam", img);
 	imshow("Borda", borda);
 	waitKey(25);
@@ -79,8 +91,15 @@ while (aux1 == 1) {
 			con << nome;
 			imwrite("imagen" + con.str() + ".jpg", img);
 			nome++;	}
+		else if (op == "pl") { cin >> pl; }
+		else if (op == "sl") { cin >> sl; }
+		else if (op == "pc") { cin >> pc; }
+		else if (op == "sc") { cin >> sc; }
 		else {
+			
 			system("cls");
+			cout << "Linha: " << row << endl;
+			cout << "Coluna: " << col << endl;
 			cout << "a      --> Alterar A" << endl;
 			cout << "b      --> Alterar B" << endl;
 			cout << "saveb  --> Salvar borda" << endl;
