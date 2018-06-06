@@ -30,6 +30,9 @@ namedWindow("WebCam");
 //namedWindow("WebCam_Gray");
 namedWindow("Borda");
 namedWindow("Borda1");
+moveWindow("WebCam", 0, 0);
+moveWindow("Borda", 700, 0);
+moveWindow("Borda1", 815, 100);
 a = 100;
 b = 100;
 //_______________________________________________________________________________________________________________________________
