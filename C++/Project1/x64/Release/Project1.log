@@ -1,5 +1,5 @@
 ﻿  Origem.cpp
-c:\users\jjader\desktop\ufop\calculo\deteccao_borda\c++\project1\origem.cpp(79): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
+c:\users\jjader\desktop\ufop\calculo\deteccao_borda\c++\project1\origem.cpp(91): warning C4244: '=': conversão de 'double' para 'float', possível perda de dados
   Gerando código
   1 of 361 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
