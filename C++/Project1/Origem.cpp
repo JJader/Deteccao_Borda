@@ -84,13 +84,10 @@ while (1) {
 	if (aux3 == 0) { // if para calibração 
 		cout << "Insira o Tamanho do Objeto em cm" << endl;
 		cin >> objcm;
-		if(aux3 == 1){ // if caso px esteje na tela
 		cout << "Insira o Tamanho do Objeto em pxl" << endl;
 		cin >> pxl;
-		}
-		else{
 			pxl = tam[2];
-		}
+		
 		rel = objcm*(1.0) / pxl;
 		aux3 = 2;
 		cout << rel << endl;
