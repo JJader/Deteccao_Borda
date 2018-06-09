@@ -46,11 +46,12 @@
 
 <h1>APRESENTAÇÃO 2</h1>
 <pre>
-	-->Apresentação de Histograma;
 	-->Apresentação dos pixels da imagem como matriz;
 		*Original;
 		*Preto e branco;	
 		*Borda;
+	--> Definição de Borda;
+	-->Apresentação de Histograma (Gráfico da tonalidade);
 	-->Demonstrar método de canny;		
 	-->Introduzir a aplicação de contorno na medição de um objeto;
 </pre>
