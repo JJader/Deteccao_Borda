@@ -1,4 +1,4 @@
-<head>
+﻿<head>
 <h3># Deteccao_Borda</h3>
 </head>				
 <body>
@@ -12,6 +12,9 @@
 <a href=https://www.youtube.com/watch?v=bdnBfu0-aEA> Só legal para ver o que a gente pode fazer </a></br>
 <a href=https://docs.gimp.org/2.8/pt_BR/plug-in-convmatrix.html> Referencial teorico sobre borda</a>
 </br></br>
+< a href = http://files.ccfacape.webnode.com/200000113-25476263fc/aulaMatlab2.pdf> Referência scilab </a>
+</br>
+</br>
 </code>
 </pre>
 <hr color="gray" width="70%" size = "5px">

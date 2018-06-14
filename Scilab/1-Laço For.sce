@@ -1,6 +1,6 @@
 clc
 clear
-imagen = imread('C:\Users\JJader\Desktop\pp.jpg'); // leitura da imagem
+imagen = imread('C:\Users\JJader\Desktop\d.jpg'); // leitura da imagem
 cinza = rgb2gray(imagen); // tratamento para cinza
 borda = edge(cinza, 'prewitt');//tratamento da borda
 //imshow(borda);
@@ -21,5 +21,3 @@ end;
 end; 
 end;
 disp(tm); // mostra a matriz do primeiro true e do último true
-
-imshow=imshowpair(imagen, borda)
