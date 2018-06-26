@@ -1,0 +1,38 @@
+ESTRUTURA DO TRABALHO FINAL
+
+1 - Resumo e abstract (Gustavo & Thiago)
+
+2 - Introdução
+2.0  - Contextualização do tema (Gustavo)
+2.1 - Problematização (Rangel)
+2.2 - Justificativa (Rangel)
+2.3 - Objetivo geral e específico (Matheus)
+
+3 - Aplicabilidade do cálculo à engenharia (Vinícius)
+
+4 - Referencial teórico
+4.1 - Processamento de imagem
+4.1.1 Armazenamento de imagem
+4.2 - Método canny para a detecção de borda
+4.2.1 Suavização Gaussiana
+4.2.2 Convolução
+4.2.3 Supressão do não máximo
+4.2.4 Limirialização por histerese
+4.3 Programação
+4.3.1 Linguagem orientada a objeto
+4.3.2 Opencv
+
+5 - Metodologia (Jamisson & Thiago)
+
+6 - Apresentação e análise dos resultados (Thiago)
+
+7 - Considerações finais (Todos)
+
+8 - Referencial bibliográfico
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+Problema: A dificuldade de fazer medições de objetos com baixo custo
+
+Objetivo Geral: Detectar as dimensões de um objeto
