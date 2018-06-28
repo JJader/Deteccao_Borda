@@ -33,6 +33,11 @@ ESTRUTURA DO TRABALHO FINAL
 
 ----------------------------------------------------------------------------------------------------------------------
 
-Problema: A dificuldade de fazer medições de objetos com baixo custo
+Problema:
+* pouco entendimento sobre a aplicabilidade da derivada pelos alunos do 1 periodo na universidade UFOP ICEIA.
+ 
+Objetivo geral:
+* Compreender a aplicação da derivada na detecção de borda do método canny.
 
-Objetivo Geral: Detectar as dimensões de um objeto
+Objetivo específico
+* identificar as mediçoes de objetos que não conhecidos
