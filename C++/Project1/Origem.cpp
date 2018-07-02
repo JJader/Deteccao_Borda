@@ -20,7 +20,7 @@ int col, row, col1, row1;
 // <col> Coluna da img; <row> linha da img; <col1> Coluna da seção da borda; <row> linha da seção da borda
 int pc = 100, pl = 100, sc = 440, sl = 430; // primeira coluna e linha, segunda coluna e linha
 float rel = 0; // <rel> relação entre pixel/cm
-int objcm, pxl; // <objcm> tamanho do objeto para calibração;
+float objcm, pxl; // <objcm> tamanho do objeto para calibração;
 string op,un; // <op> String tratada pelo if; <un> Unidade da medição;
 Mat img; // <img> matriz da imagem
 Mat borda; // <img> matriz da borda
