@@ -1,0 +1,64 @@
+\begin{thebibliography}{}
+
+\bibitem[Biasi et~al. 2002]{biasi2002desenvolvimento}
+Biasi, H. H.~D. et~al. (2002).
+\newblock Desenvolvimento de uma metodologia de vis{\~a}o computacional para o
+  aux{\'\i}lio no planejamento cir{\'u}rgico no implante de pr{\'o}teses
+  endoluminais.
+
+\bibitem[Bradski and Kaehler 2008]{bradski2008learning}
+Bradski, G. and Kaehler, A. (2008).
+\newblock {\em Learning OpenCV: Computer vision with the OpenCV library}.
+\newblock " O'Reilly Media, Inc.".
+
+\bibitem[Canny 1986]{canny1986computational}
+Canny, J. (1986).
+\newblock A computational approach to edge detection.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  (6):679--698.
+
+\bibitem[Canny 1983]{canny1983variational}
+Canny, J.~F. (1983).
+\newblock A variational approach to edge detection.
+\newblock In {\em AAAI}, volume 1983, pages 54--58.
+
+\bibitem[de~Queiroz and Gomes 2006]{de2006introduccao}
+de~Queiroz, J. E.~R. and Gomes, H.~M. (2006).
+\newblock Introdu{\c{c}}{\~a}o ao processamento digital de imagens.
+\newblock {\em RITA}, 13(2):11--42.
+
+\bibitem[Dias 2016]{gabriela}
+Dias, G.~A. (2016).
+\newblock Cálculo diferencial e integral e suas aplicações.
+
+\bibitem[Do~Vale and DAL~POZ 2002]{do2002processo}
+Do~Vale, G.~M. and DAL~POZ, A.~P. (2002).
+\newblock Processo de detec{\c{c}}{\~a}o de bordas de canny.
+\newblock {\em Boletim de Ci{\^e}ncias Geod{\'e}sicas}, 8(2).
+
+\bibitem[Marengoni and Stringhini 2009]{marengoni2009tutorial}
+Marengoni, M. and Stringhini, S. (2009).
+\newblock Tutorial: Introdu{\c{c}}{\~a}o {\`a} vis{\~a}o computacional usando
+  opencv.
+\newblock {\em Revista de Inform{\'a}tica Te{\'o}rica e Aplicada},
+  16(1):125--160.
+
+\bibitem[MathWorks 2017]{Matlab}
+MathWorks (2017).
+\newblock Documentation | rgb2gray.
+\newblock Disponível em:
+  \url{https://www.mathworks.com/help/matlab/ref/rgb2gray.html}.
+
+\bibitem[Morgan et~al. 2008]{morgan2008tecnicas}
+Morgan, J. et~al. (2008).
+\newblock T{\'e}cnicas de segmenta{\c{c}}{\~a}o de imagens na gera{\c{c}}{\~a}o
+  de programas para m{\'a}quinas de comando num{\'e}rico.
+
+\bibitem[Silva 2000]{silva2000segmentaccao}
+Silva, L. (2000).
+\newblock {\em Segmenta{\c{c}}{\~a}o de Imagens de Profundidade por
+  Detec{\c{c}}{\~a}o de Bordas}.
+\newblock PhD thesis, Disserta{\c{c}}{\~a}o (Mestrado), UFPR, Curitiba, 2000.
+  113p.
+
+\end{thebibliography}

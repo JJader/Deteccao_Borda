@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Introdu\347\343o}{}% 1
+\BOOKMARK [1][-]{section.2}{An\341lise cr\355tica}{}% 2
+\BOOKMARK [1][-]{section.3}{Aplicabilidade do c\341lculo da engenharia}{}% 3
+\BOOKMARK [1][-]{section.4}{Referencial te\363rico}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Processamento de imagem}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{M\351todo Canny para a detec\347\343o de borda}{section.4}% 6
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Suaviza\347\343o Gaussiana}{subsection.4.2}% 7
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Convolu\347\343o}{subsection.4.2}% 8
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Supress\343o do n\343o m\341ximo}{subsection.4.2}% 9
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Limiariza\347\343o}{subsection.4.2}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Biblioteca para o processamento de imagem: OpenCV}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Metodologia}{}% 12
+\BOOKMARK [1][-]{section.6}{Resultados}{}% 13
+\BOOKMARK [1][-]{section.7}{Considera\347\365es Finais}{}% 14
