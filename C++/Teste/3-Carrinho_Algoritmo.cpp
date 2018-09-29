@@ -7,140 +7,147 @@
 #include "tserial.h"
 #include "bot_control.h"
 
-serial comm; 
 using namespace std;
-
 using namespace cv;
+serial comm;
+bool k = true;
 
-//Vetor de auxiliares
-int aux[] = { 0,0,0,0,0,0,0,0,0,0 };
-
-//Struct para definição da área de interesse
-struct ROI {
-	int col;
-	int row;
-};
-
-//Struct para definição dos limiares do método Canny
 struct LIM {
 	int sup;
 	int inf;
 };
 
-//Struct pra definição das coordenadas dos pontos encontrados
-struct COOR {
-	int i;
-	int j;
-};
-
-//Criação de uma variável do tipo ROI (Regiao de interesse) de tamanho 2 (início e fim)
-struct ROI roi[2];
-
-//Função para selecionar o ROI (Regiao de iteresse) a partir do click na tela
-//Auxiliar 3 para comutar entre coordenadas inicial e final
-void mouse_callback(int event, int x, int y, int flag, void *param) {
-	if ((event == EVENT_LBUTTONDBLCLK) && (aux[3] == 0)) {
-		cout << "(" << x << ", " << y << ")" << endl;
-		roi[0].col = x;
-		roi[0].row = y;
-		aux[3] = 1;
-	}
-	else if ((event == EVENT_LBUTTONDBLCLK) && (aux[3] == 1)) {
-		cout << "(" << x << ", " << y << ")" << endl;
-		roi[1].col = x;
-		roi[1].row = y;
-		aux[3] = 0;
-	}
-}
-
 void Arduino(char data) {
 	char com = 'COM6';
 	comm.startDevice(&com, 9600);
-	comm.send_data(data); //The data is sent through the port
-	comm.stopDevice(); //The device is closed down
+	comm.send_data(data);
+	comm.stopDevice();
+}
+
+void configuracao() {
+	string a = "v";
+	cin >> a;
+	if (a == "V" || a == "v") { Arduino('V'); }
+	else if (a == "W" || a == "w") { Arduino('W'); }
+	else if (a == "abort") { k = false; }
+	else { system("cls"); }
 }
 
 int main() {
 
 	namedWindow("Nissin");
-	cvCreateTrackbar("Peao", "Nissin", 0, 1);
-	cvCreateTrackbar("A", "Nissin", 0, 1000);
-	cvCreateTrackbar("B", "Nissin", 0, 1000);
-
-
-	struct LIM lim; //Variavel lim do tipo LIM para limiarização Canny
-	struct COOR coor[4]; //Vetor coor de tamanho 4 para encontrar quatro pontos na imagem (em teste)
-	Mat img; //A imagem lida da WebCam é armazenada nessa matriz
-	Mat	model; //Uma primeira imagem do cenário é salva nessa matriz para fins de subtração (Background Subtraction)
-	Mat	dif; //Nessa matriz sera armazenad a diferença entre a Matriz model e a Matriz img
-	Mat gray; //Matriz para armazenar a transformação para escalas de cinza
-	Mat channel[3]; //Matrizes para armazenar as três bandas (Red, blue, Green)
-	Mat borda; //Matriz para armazenar a borda
-
-	//Solicita ao usuário no início do programa a inserção dos limiares (Canny) // Necessário fazer controle dinâmico (a qualquer momento)
-	
 	namedWindow("imBorda"); // Cria janela para impressão da imagem de bordas
 	namedWindow("webcam"); // Cria janela para impressão da imagem de bordas
-	
+
+	cvCreateTrackbar("Peao", "Nissin", 0, 1);
+	cvCreateTrackbar("A", "Nissin", 0, 500);
+	cvCreateTrackbar("B", "Nissin", 0, 500);
+	cvSetTrackbarPos("A", "Nissin", 150);
+	cvSetTrackbarPos("B", "Nissin", 150);
+	cvSetTrackbarPos("Peao", "Nissin", 1);
+
+	struct LIM lim; //Variavel lim do tipo LIM para limiarização Canny
+	Mat img, gray, borda; //A imagem lida da WebCam é armazenada nessa matriz
+	Mat	model, dif;  //Uma primeira imagem do cenário é salva nessa matriz para fins de subtração (Background Subtraction)
+					//<Dif>Nessa matriz sera armazenad a diferença entre a Matriz model e a Matriz img
+	bool move = false, stop = true;
+
+	//Setup(){
 	VideoCapture cam(0); // Ativa webcam
 	waitKey(2000);
 	cam.read(model);
 	cvtColor(model, model, COLOR_BGR2GRAY); // Conversão matriz DIF para escala de cinzas
 	Arduino('V');
-	//Loop infinito
-	while (true) {
-		
-		setMouseCallback("imColor", mouse_callback); // Definição do ROI
+
+	//Loop()
+	while (k) {
+
 		lim.inf = cvGetTrackbarPos("A", "Nissin");
 		lim.sup = cvGetTrackbarPos("B", "Nissin");
 
-		cam.read(img); // Leitura da imagem em modo Vivo
-
-		
-		cvtColor(img, gray, COLOR_BGR2GRAY); // Conversão matriz DIF para escala de cinzas
-		rectangle(img, { 0,0 }, { 50,50 }, { 255,255,255 }, 2, cv::LINE_AA, 0);
-		//	morphologyEx(gray, gray, 4, Mat1b(3, 3, 1));
-		
-		if(cvGetTrackbarPos("Peao","Nissin") == 1){
+		//______________________________________________________________________________________________________________________________
+				//Tratamento das imagens
+		cam.read(img);
+		cvtColor(img, gray, COLOR_BGR2GRAY);
+		if (cvGetTrackbarPos("Peao", "Nissin") == 1) {
 			gray.copyTo(model);
+			cvSetTrackbarPos("Peao", "Nissin", 0);
 		}
-				
+
+
+		rectangle(img, { 0,0 }, { 50,50 }, { 255,255,255 }, 2, cv::LINE_AA, 0);
+		rectangle(img, { 590,50 }, { 640,0 }, { 255,255,255 }, 2, cv::LINE_AA, 0);
+		rectangle(img, { 0,480 }, { 50,430 }, { 255,255,255 }, 2, cv::LINE_AA, 0);
+		rectangle(img, { 590,480 }, { 640,430 }, { 255,255,255 }, 2, cv::LINE_AA, 0);
+
 		dif = abs(model - gray); // A matriz dif recebe a diferença entre o modelo e o Ao Vivo
-		
+
 		for (int i = 0; i < img.rows; i++) {
 			for (int j = 0; j < img.cols; j++) {
 				if (dif.at<uchar>(i, j) >= 0 && dif.at<uchar>(i, j) < 50) {
 					gray.at<uchar>(i, j) = 0;
-				}
-			}
-		}
+				}}}
 
-		
-		
 		GaussianBlur(gray, gray, Size(3, 3), 7, 7);
 		Canny(gray, borda, lim.sup, lim.inf, 3);
-
+		//______________________________________________________________________________________________________________________________
+				//Detecção de objetos		
 		for (int i = 0; i < 50; i++) {
 			for (int j = 0; j < 50; j++) {
-				if ((borda.at<uchar>(i, j) >= 255) && (aux[8]==0)) {
-					Arduino('W');
-					aux[8] = 1;
-				}
-			}
-		}
+				if (borda.at<uchar>(i, j) >= 255) {
+					Arduino('B');
+					cout << "Tras" << endl;
+					move = true;
+					stop = true;
+					break;
+				}}}
 
-		if (aux[8] == 0) {
-			Arduino('w');
-		}
+		for (int i = 430; i < 480; i++) {
+			for (int j = 0; j < 50; j++) {
+				if (borda.at<uchar>(i, j) >= 255) {
+					Arduino('R');
+					cout << "Direita" << endl;
+					move = true;
+					stop = true;
+					break;
+				}}}
 
-		aux[8] = 0;
+		for (int i = 430; i < 480; i++) {
+			for (int j = 590; j < 640; j++) {
+				if (borda.at<uchar>(i, j) >= 255) {
+					Arduino('L');
+					cout << "Esquerda" << endl;
+					move = true;
+					stop = true;
+					break;
+				}}}
+
+		for (int i = 0; i < 50; i++) {
+			for (int j = 590; j < 640; j++) {
+				if (borda.at<uchar>(i, j) >= 255) {
+					Arduino('F');
+					cout << "Frente" << endl;
+					move = true;
+					stop = true;
+					break;
+				}}}
+
+		if (!move && stop) { Arduino('S'); stop = false; }
+		move = false;
+
+		//______________________________________________________________________________________________________________________________
+				//Mostrar a imagem 
+		flip(img, img, 1);
+		putText(img, "Frente", { 0,80 }, CV_FONT_HERSHEY_SIMPLEX, 1, { 0,255,0 }, 3, cv::LINE_AA);
+		putText(img, "Traz", { 570,80 }, CV_FONT_HERSHEY_SIMPLEX, 1, { 0,255,0 }, 3, cv::LINE_AA);
+		putText(img, "Esquerda", { 0,410 }, CV_FONT_HERSHEY_SIMPLEX, 1, { 0,255,0 }, 3, cv::LINE_AA);
+		putText(img, "Direita", { 540,410 }, CV_FONT_HERSHEY_SIMPLEX, 1, { 0,255,0 }, 3, cv::LINE_AA);
+
 
 		imshow("webcam", img);
 		imshow("imBorda", borda);
 		waitKey(20);
+		if (_kbhit()) { configuracao(); }
 	}
-
 	return 0;
 }
-
-//GrabCut
