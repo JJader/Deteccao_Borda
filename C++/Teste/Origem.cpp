@@ -242,10 +242,10 @@ void metodoNissin() {
 }
 
 void metodoNorma(){
-	
-	for (int i = 0; i <= borda1.rows; i++) {
-		for (int j = 0; j <= borda1.cols; j++) {
-			if (borda1.at<uchar>(i, j) == 255 && !primeiro_Ponto) {
+
+	for (int i = y.first; i <= y.second; i++) {
+		for (int j = x.first; j <= x.second; j++) {
+			if (borda.at<uchar>(i, j) == 255 && !primeiro_Ponto) {
 				A.first = i;
 				A.second = j;
 				primeiro_Ponto = true;
@@ -254,10 +254,10 @@ void metodoNorma(){
 		}
 	}
 	primeiro_Ponto = false;
-
-	for (int j = 0; j <= borda1.cols; j++) {
-		for (int i = borda1.rows; i >= 0; i--) {
-			if (borda1.at<uchar>(i, j) == 255 && !primeiro_Ponto) {
+	
+	for (int j = x.first; j <= x.second; j++) {
+		for (int i = y.second; i >= y.first; i--) {
+			if (borda.at<uchar>(i, j) == 255 && !primeiro_Ponto) {
 				B.first = i;
 				B.second = j;
 				primeiro_Ponto = true;
@@ -267,10 +267,23 @@ void metodoNorma(){
 	}
 	primeiro_Ponto = false;
 
-    line(borda1, {B.second, B.first }, { A.second, A.first }, { 255,255,255 }, 2, cv::LINE_AA, 0);
-	//rectangle(img, { (y.first+A.second) - 3, (x.first+A.first) - 3 }, { (y.second+A.second) + 3, (x.second+A.first) + 3 }, { 255,255,255 }, 2, cv::LINE_AA, 0);
+    line(img, {B.second, B.first }, { A.second, A.first }, { 205,0,0 }, 1.5, cv::LINE_AA, 0);
+	rectangle(img, { A.second - 3, A.first - 3 }, { A.second + 3, A.first + 3 }, { 0,0,255 }, 1, cv::LINE_AA, 0);
+	rectangle(img, { B.second - 3, B.first - 3 }, { B.second + 3, B.first + 3 }, { 255,0,0 }, 1, cv::LINE_AA, 0);
 
+	//Para calcular a norma
+	tam[0] = A.first - B.first;
+	tam[1] = A.second - B.second;
 
+	// Cálculo da norma do vetor encontrado
+	tam[2] = sqrt(pow(tam[0], 2) + pow(tam[1], 2));
+
+	//Gera String a partir da norma para ser impresso na tela
+	ostringstream tamanho;
+	tamanho << tam[2];
+
+	//Imprime o tamanho na tela
+	putText(img, tamanho.str(), { B.second,B.first }, CV_FONT_HERSHEY_SIMPLEX, 1, { 255,0,0 }, 2, cv::LINE_AA, 0);
 }
 
 int main(void) {
