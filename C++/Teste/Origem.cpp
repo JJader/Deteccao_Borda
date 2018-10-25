@@ -132,7 +132,9 @@ void colocar_texto(int layout) {
 		tamanho << (tam[2] * rel);
 	}
 
-	putText(img, tamanho.str() + un, { 0,475 }, CV_FONT_HERSHEY_SIMPLEX, 1, { 0,255,0 }, 3, cv::LINE_AA);
+	//putText(img, tamanho.str() + un, { 0,475 }, CV_FONT_HERSHEY_SIMPLEX, 1, { 0,255,0 }, 3, cv::LINE_AA);
+	putText(img, tamanho.str() + un, { B.second,B.first }, CV_FONT_HERSHEY_SIMPLEX, 1, { 255,0,0 }, 2, cv::LINE_AA, 0);
+
 	rectangle(img, { x.first,y.first }, { x.second,y.second }, { 0,255,0 }, 2, cv::LINE_AA, 0);
 		
 		switch (layout) {		
@@ -278,12 +280,6 @@ void metodoNorma(){
 	// Cálculo da norma do vetor encontrado
 	tam[2] = sqrt(pow(tam[0], 2) + pow(tam[1], 2));
 
-	//Gera String a partir da norma para ser impresso na tela
-	ostringstream tamanho;
-	tamanho << tam[2];
-
-	//Imprime o tamanho na tela
-	putText(img, tamanho.str(), { B.second,B.first }, CV_FONT_HERSHEY_SIMPLEX, 1, { 255,0,0 }, 2, cv::LINE_AA, 0);
 }
 
 int main(void) {
