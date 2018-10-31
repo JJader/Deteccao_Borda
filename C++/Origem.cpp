@@ -14,13 +14,14 @@ typedef	struct Tamanho
 	int first, second;
 } Tamanho;
 
-Tamanho y, x;
+int nivelCinza;
+Tamanho y, x, A, B;
 VideoCapture cam(0);
-Mat img, gray, modelo; // <img> matriz da imagem
-Mat borda, borda1; // <img> matriz da borda
+Mat img, gray, model; // <img> matriz da imagem
+Mat borda, borda1, dif; // <img> matriz da borda
 string un;
 
-bool unidade_cm = false, primeiro_Ponto = false, primeiro_retangulo = true, wh = true;
+bool unidade_cm = false, primeiro_Ponto = false, primeiro_retangulo = true;
 int nameim = 0, namebo = 0; // <namebo> Nome da borda; <nameim> Nome da imagem;
 int a, b, tam[3], layout = 3; // <a,b> Configuração do filtro;  <tam> posição da borda
 float rel = 0.0; // <rel> relação entre pixel/cm
@@ -35,7 +36,6 @@ void troca(int *primeiro, int *segundo) {
 	*segundo = a;
 
 }
-
 
 void anti_Bug() {
 	// fazendo a seção da borda
@@ -66,7 +66,6 @@ void calibracao_tamanho() {
 	cout << "Relacão prixel centimetro : " << rel << endl;
 }
 
-
 void configuracao() {
 	string op;
 	cin >> op;
@@ -89,11 +88,9 @@ void configuracao() {
 	else if (op == "pc") { cin >> x.first; } // primeria coluna
 	else if (op == "sc") { cin >> x.second; } // segunda coluna
 	else if (op == "calibta") { calibracao_tamanho(); }
-	//else if (op == "calibim") { calibracao_imagem(); }
 	else if (op == "px") { unidade_cm = false; }
 	else if (op == "cm") { unidade_cm = true; }
 	else if (op == "lay") { cin >> layout; }
-	else if (op == "abort") { wh = false; }
 	
 	else {
 
@@ -117,11 +114,10 @@ void configuracao() {
 		cout << "lay --> Layout" << endl;
 		cout << "calibta --> Calibrar tamanho" << endl;
 		cout << "calibim --> Calibrar imagem" << endl;
-		cout << "abort  --> Finalizar" << endl << endl;
+		cout << "esc  --> Finalizar" << endl << endl;
 	}
 	anti_Bug();
 }
-
 
 void colocar_texto(int layout) {
 	ostringstream tamanho;
@@ -135,7 +131,9 @@ void colocar_texto(int layout) {
 		tamanho << (tam[2] * rel);
 	}
 
-	putText(img, tamanho.str() + un, { 0,475 }, CV_FONT_HERSHEY_SIMPLEX, 1, { 0,255,0 }, 3, cv::LINE_AA);
+	//putText(img, tamanho.str() + un, { 0,475 }, CV_FONT_HERSHEY_SIMPLEX, 1, { 0,255,0 }, 3, cv::LINE_AA);
+	putText(img, tamanho.str() + un, { B.second,B.first }, CV_FONT_HERSHEY_SIMPLEX, 1, { 255,0,0 }, 2, cv::LINE_AA, 0);
+
 	rectangle(img, { x.first,y.first }, { x.second,y.second }, { 0,255,0 }, 2, cv::LINE_AA, 0);
 		
 		switch (layout) {		
@@ -157,6 +155,14 @@ void colocar_texto(int layout) {
 			imshow("Borda1", borda1);
 			cvDestroyWindow("WebCam_Gray");
 			break;
+
+		case 4:
+			imshow("WebCam", img);
+			imshow("WebCam_Gray", dif);
+			cvDestroyWindow("Borda");
+			cvDestroyWindow("Borda1");
+			break;
+
 		default:
 			imshow("WebCam", img);
 			cvDestroyWindow("WebCam_Gray");
@@ -169,7 +175,6 @@ void colocar_texto(int layout) {
 	
 	
 }
-
 
 void mouse_callback(int  event, int  x1, int  y1, int  flag, void *param)
 {
@@ -192,6 +197,90 @@ void mouse_callback(int  event, int  x1, int  y1, int  flag, void *param)
 	anti_Bug();
 }
 
+void getModel() {
+
+	if (getTrackbarPos("Fundo", "Teste") == 1)
+	{
+		setTrackbarPos("Fundo", "Teste", 0);
+		gray.copyTo(model);
+		gray.copyTo(dif);
+	}
+}
+
+void background_Sub() {
+
+	getModel();
+
+	for (int i = 0; i < img.rows ; i++)
+	{
+		for (int j = 0; j < img.cols; j++) {
+			if (abs(gray.at<uchar>(i, j) - model.at<uchar>(i, j)) < nivelCinza)
+			{
+				dif.at<uchar>(i, j) = 0;
+			}
+			else
+			{
+				dif.at<uchar>(i, j) = gray.at<uchar>(i, j);
+			}
+		}
+
+
+	}
+	
+}
+
+void metodoNissin() {
+
+	for (int y = 0; y < borda1.rows; y++) {
+		for (int x = 0; x < borda1.cols; x++) {
+			if (borda1.at<uchar>(y, x) == 255 && !primeiro_Ponto) { tam[0] = y; primeiro_Ponto = true; }
+			else if (borda1.at<uchar>(y, x) == 255) { tam[1] = y; }
+		}
+	}//fim do For
+	primeiro_Ponto = false;
+	tam[2] = tam[1] - tam[0]; // diferença da posição inicial e final
+
+}
+
+void metodoNorma(){
+
+	for (int i = y.first; i <= y.second; i++) {
+		for (int j = x.first; j <= x.second; j++) {
+			if (borda.at<uchar>(i, j) == 255 && !primeiro_Ponto) {
+				A.first = i;
+				A.second = j;
+				primeiro_Ponto = true;
+
+			}
+		}
+	}
+	primeiro_Ponto = false;
+	
+	for (int j = x.first; j <= x.second; j++) {
+		for (int i = y.second; i >= y.first; i--) {
+			if (borda.at<uchar>(i, j) == 255 && !primeiro_Ponto) {
+				B.first = i;
+				B.second = j;
+				primeiro_Ponto = true;
+
+			}
+		}
+	}
+	primeiro_Ponto = false;
+
+    line(img, {B.second, B.first }, { A.second, A.first }, { 205,0,0 }, 1.5, cv::LINE_AA, 0);
+	rectangle(img, { A.second - 3, A.first - 3 }, { A.second + 3, A.first + 3 }, { 0,0,255 }, 1, cv::LINE_AA, 0);
+	rectangle(img, { B.second - 3, B.first - 3 }, { B.second + 3, B.first + 3 }, { 255,0,0 }, 1, cv::LINE_AA, 0);
+
+	//Para calcular a norma
+	tam[0] = A.first - B.first;
+	tam[1] = A.second - B.second;
+
+	// Cálculo da norma do vetor encontrado
+	tam[2] = sqrt(pow(tam[0], 2) + pow(tam[1], 2));
+
+}
+
 int main(void) {
 	//setup
 	    namedWindow("WebCam");
@@ -204,6 +293,16 @@ int main(void) {
 		moveWindow("WebCam_Gray", 700, 0);
 		moveWindow("Borda1", 815, 100);
 		
+		cvCreateTrackbar("A", "Teste", 0, 500);
+		cvCreateTrackbar("B", "Teste", 0, 500);
+		cvCreateTrackbar("Fundo", "Teste", 0, 1);
+		cvCreateTrackbar("Cinza", "Teste", 0, 50);
+
+		setTrackbarPos("A", "Teste", 100);
+		setTrackbarPos("B", "Teste", 100);
+		setTrackbarPos("Fundo", "Teste", 1);
+		setTrackbarPos("Cinza", "Teste", 25);
+
 		y.first = 100; y.second = 450;
 		x.first = 100; x.second = 450;
 		a = 100;
@@ -216,33 +315,30 @@ int main(void) {
 		
 
 		//loop
-		while (wh) {
+		while (true) {
 		//_______________________________________________________________________________________________________________________________
 		//Bloco da captura de imagem
-			cvCreateTrackbar("A", "Teste", &a, 500);
-			cvCreateTrackbar("B", "Teste", &b, 500);
 			
+			a = getTrackbarPos("A", "Teste");
+			b = getTrackbarPos("B", "Teste");
+			nivelCinza = getTrackbarPos("Cinza", "Teste");
+
 			setMouseCallback("WebCam", mouse_callback);
 			cam.read(img);
 			cvtColor(img, gray, COLOR_BGR2GRAY);// Transformando img em cinza
-			Canny(gray, borda, a, b); // Transformar img em borda com o método canny
+			background_Sub();
+			Canny(dif, borda, a, b); // Transformar img em borda com o método canny
 			
-	
-			for (int y = 0; y < borda1.rows - 1; y++) {
-				for (int x = 0; x < borda1.cols - 1; x++) {
-					if (borda1.at<uchar>(y, x) == 255 && !primeiro_Ponto) { tam[0] = y; primeiro_Ponto = true; }
-					else if (borda1.at<uchar>(y, x) == 255) { tam[1] = y; }
-				}
-			}//fim do For
-			primeiro_Ponto = false;
-			tam[2] = tam[1] - tam[0]; // diferença da posição inicial e final
-			
+			//metodoNissin();
+			metodoNorma();
+
 			colocar_texto(layout);
 			if (_kbhit()) {configuracao();}
-			waitKey(25);
+			char c = waitKey(30);
+			if (c == 27) { break; }
 		
 		}//Fim do while
 		
-		destroyAllWindows;
+		destroyAllWindows();
 		return 0;
 	}//Fim da main
