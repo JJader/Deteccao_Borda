@@ -1,0 +1,25 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Biasi et~al.}{2002}{biasi2002desenvolvimento}
+Biasi, H. H.~D. et~al.  \harvardyearleft 2002\harvardyearright .
+\newblock Desenvolvimento de uma metodologia de vis{\~a}o computacional para o
+  aux{\'\i}lio no planejamento cir{\'u}rgico no implante de pr{\'o}teses
+  endoluminais.
+
+\harvarditem{Canny}{1983}{canny1983variational}
+Canny, J.~F.  \harvardyearleft 1983\harvardyearright .
+\newblock A variational approach to edge detection., {\em AAAI}, Vol. 1983,
+  pp.~54--58.
+
+\harvarditem{de~Queiroz \harvardand\ Gomes}{2006}{de2006introduccao}
+de~Queiroz, J. E.~R. \harvardand\ Gomes, H.~M.  \harvardyearleft
+  2006\harvardyearright .
+\newblock Introdu{\c{c}}{\~a}o ao processamento digital de imagens., {\em RITA}
+  {\bf 13}(2):~11--42.
+
+\harvarditem{Gonzalez \harvardand\ Woods}{2010}{ProcDigital}
+Gonzalez, R.~C. \harvardand\ Woods, R.~C.  \harvardyearleft
+  2010\harvardyearright .
+\newblock {\em Processamento digital de imagens}, 3 edn, Gabriela Trevisan.
+
+\end{thebibliography}

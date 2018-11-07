@@ -1,0 +1,9 @@
+\BOOKMARK [1][]{section.1}{1 Introduction to this Template}{}% 1
+\BOOKMARK [1][]{section.2}{2 Processamento de imagem}{}% 2
+\BOOKMARK [1][]{section.3}{3 M\351todos Canny para detec\347\343o de bordas}{}% 3
+\BOOKMARK [2][]{subsection.3.1}{3.1 Suaviza\347\343o Gaussian}{section.3}% 4
+\BOOKMARK [2][]{subsection.3.2}{3.2 Detec\347\343o do gradiente}{section.3}% 5
+\BOOKMARK [2][]{subsection.3.3}{3.3 Supress\343o do n\343o m\341ximo}{section.3}% 6
+\BOOKMARK [2][]{subsection.3.4}{3.4 Limiariza\347\343o}{section.3}% 7
+\BOOKMARK [1][]{section.4}{4 Desenvolvimento do algoritmo}{}% 8
+\BOOKMARK [1][]{section.5}{5 Resultados}{}% 9
