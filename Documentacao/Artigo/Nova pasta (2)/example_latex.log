@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.30)  6 NOV 2018 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.30)  21 NOV 2018 14:44
 entering extended mode
 **./example_latex.tex
 (example_latex.tex
@@ -1695,68 +1695,57 @@ LaTeX Font Info:    Font shape `T1/Merriweather-OsF/m/n' will be
 
 
  <./editora_logo.png (PNG copy)> <./rbca_logo.png>]
-Underfull \hbox (badness 1112) in paragraph at lines 94--95
-\T1/Merriweather-OsF/m/n/9 (+20) características físicas e geométricas básicas 
-dos
+Underfull \hbox (badness 1210) in paragraph at lines 96--97
+\T1/Merriweather-OsF/m/n/9 (+20) na captura de pontos igualmente espaçados no
  []
 
 
-Underfull \hbox (badness 7796) in paragraph at lines 96--97
-[]\T1/Merriweather-OsF/m/n/9 (+20) Segundo [][]Gonzalez and Woods[][] ([][]2010
-[][]) uma
+Underfull \hbox (badness 1442) in paragraph at lines 98--99
+[]\T1/Merriweather-OsF/m/n/9 (+20) A par desse conceito, pode-se representar a
  []
 
-
-Underfull \hbox (badness 2846) in paragraph at lines 99--100
-\T1/Merriweather-OsF/m/n/9 (+20) os elementos de uma imagem é necessário a
- []
-
-<img/img1.png, id=62, 959.83594pt x 468.24937pt>
+<img/img1.png, id=63, 959.83594pt x 468.24937pt>
 File: img/img1.png Graphic file (type png)
 <use img/img1.png>
-Package pdftex.def Info: img/img1.png  used on input line 104.
-(pdftex.def)             Requested size: 244.11394pt x 119.08405pt.
+Package pdftex.def Info: img/img1.png  used on input line 102.
+(pdftex.def)             Requested size: 219.70105pt x 107.17351pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 104--105
-[][] 
+Underfull \hbox (badness 1052) in paragraph at lines 110--112
+\T1/Merriweather-OsF/m/n/9 (+20) intensidade das bandas vermelha, verde e azul.
+
  []
 
-
-Underfull \vbox (badness 1242) has occurred while \output is active []
-
-
-Overfull \hbox (21.44983pt too wide) detected at line 119
-[]\T1/Merriweather-OsF/m/it/9 F\T1/Merriweather-OsF/m/n/9 (\T1/Merriweather-OsF
-/m/it/9 x\T1/Merriweather-OsF/m/n/9 , \T1/Merriweather-OsF/m/it/9 y\T1/Merriwea
-ther-OsF/m/n/9 ) = (0, 299 \OMS/cmsy/m/n/9  \T1/Merriweather-OsF/m/it/9 F[]\T1
-/Merriweather-OsF/m/n/9 (\T1/Merriweather-OsF/m/it/9 x\T1/Merriweather-OsF/m/n/
-9 , \T1/Merriweather-OsF/m/it/9 y\T1/Merriweather-OsF/m/n/9 )) + (0, 587 \OMS/c
-msy/m/n/9  \T1/Merriweather-OsF/m/it/9 F[]\T1/Merriweather-OsF/m/n/9 (\T1/Merr
-iweather-OsF/m/it/9 x\T1/Merriweather-OsF/m/n/9 , \T1/Merriweather-OsF/m/it/9 y
-\T1/Merriweather-OsF/m/n/9 )) + (0, 114 \OMS/cmsy/m/n/9  \T1/Merriweather-OsF/
-m/it/9 F[]\T1/Merriweather-OsF/m/n/9 (\T1/Merriweather-OsF/m/it/9 x\T1/Merriwea
-ther-OsF/m/n/9 , \T1/Merriweather-OsF/m/it/9 y\T1/Merriweather-OsF/m/n/9 ))
- []
-
-<img/lenna_rgb_gray.jpg, id=67, 1445.4pt x 575.14874pt>
+<img/lenna_rgb_gray.jpg, id=69, 1445.4pt x 575.14874pt>
 File: img/lenna_rgb_gray.jpg Graphic file (type jpg)
 <use img/lenna_rgb_gray.jpg>
-Package pdftex.def Info: img/lenna_rgb_gray.jpg  used on input line 124.
+Package pdftex.def Info: img/lenna_rgb_gray.jpg  used on input line 116.
 (pdftex.def)             Requested size: 244.11394pt x 97.13333pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 124--125
+Overfull \hbox (9.0pt too wide) in paragraph at lines 116--117
  [][] 
  []
 
-<img/img9.jpg, id=70, 149.796pt x 99.864pt>
+
+Underfull \vbox (badness 3612) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 121--122
+\T1/Merriweather-OsF/m/n/9 (+20) a documentação oficial dos desenvolvedores da
+ []
+
+<img/img9.jpg, id=73, 149.796pt x 99.864pt>
 File: img/img9.jpg Graphic file (type jpg)
 <use img/img9.jpg>
-Package pdftex.def Info: img/img9.jpg  used on input line 135.
+Package pdftex.def Info: img/img9.jpg  used on input line 132.
 (pdftex.def)             Requested size: 146.46985pt x 97.65575pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 137--137
 |[]\T1/Merriweather-OsF/b/n/11 Métodos Canny para detecção de
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (17.5pt): 
@@ -1765,50 +1754,37 @@ Package Fancyhdr Warning: \headheight is too small (17.5pt):
  This may cause the page layout to be inconsistent, however.
 
 [2 <./img/img1.png> <./img/lenna_rgb_gray.jpg> <./img/img9.jpg>]
-<img/1-gradiente.jpg, id=90, 495.35063pt x 126.4725pt>
+<img/1-gradiente.jpg, id=88, 486.31688pt x 138.5175pt>
 File: img/1-gradiente.jpg Graphic file (type jpg)
 <use img/1-gradiente.jpg>
-Package pdftex.def Info: img/1-gradiente.jpg  used on input line 157.
-(pdftex.def)             Requested size: 244.11394pt x 62.32715pt.
+Package pdftex.def Info: img/1-gradiente.jpg  used on input line 159.
+(pdftex.def)             Requested size: 244.11394pt x 69.53122pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 157--158
+Overfull \hbox (9.0pt too wide) in paragraph at lines 159--160
  [][] 
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 172--173
-\T1/Merriweather-OsF/m/n/9 (+20) encontrar as borda, entretanto, como aplicar a
+Underfull \vbox (badness 2884) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 181--182
+\T1/Merriweather-OsF/m/n/9 (+20) onde a intensidade é constante, e diferente de
 
  []
 
-
-Underfull \vbox (badness 1577) has occurred while \output is active []
-
-<img/mascara.jpg, id=101, 252.945pt x 237.13594pt>
+<img/mascara.jpg, id=95, 252.945pt x 237.13594pt>
 File: img/mascara.jpg Graphic file (type jpg)
 <use img/mascara.jpg>
-Package pdftex.def Info: img/mascara.jpg  used on input line 188.
-(pdftex.def)             Requested size: 244.11394pt x 228.86006pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 188--189
- [][] 
- []
-
-<img/gradiente.png, id=102, 587.19376pt x 261.97874pt>
+Package pdftex.def Info: img/mascara.jpg  used on input line 187.
+(pdftex.def)             Requested size: 146.46985pt x 137.3182pt.
+<img/gradiente.png, id=99, 583.42969pt x 216.05719pt>
 File: img/gradiente.png Graphic file (type png)
 <use img/gradiente.png>
-Package pdftex.def Info: img/gradiente.png  used on input line 195.
-(pdftex.def)             Requested size: 244.11394pt x 108.91103pt.
+Package pdftex.def Info: img/gradiente.png  used on input line 196.
+(pdftex.def)             Requested size: 170.88272pt x 63.28136pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 195--196
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 5374) has occurred while \output is active []
+Underfull \vbox (badness 2326) has occurred while \output is active []
 
 
 
@@ -1817,163 +1793,217 @@ Package Fancyhdr Warning: \headheight is too small (17.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3 <./img/1-gradiente.jpg> <./img/mascara.jpg>]
-<img/1im.jpg, id=120, 182.18062pt x 188.20313pt>
+[3 <./img/1-gradiente.jpg> <./img/mascara.jpg> <./img/gradiente.png>]
+<img/1im.jpg, id=117, 172.39406pt x 191.9672pt>
 File: img/1im.jpg Graphic file (type jpg)
 <use img/1im.jpg>
-Package pdftex.def Info: img/1im.jpg  used on input line 204.
-(pdftex.def)             Requested size: 146.46985pt x 151.31796pt.
-<img/grady.jpg, id=122, 356.83313pt x 200.24812pt>
+Package pdftex.def Info: img/1im.jpg  used on input line 205.
+(pdftex.def)             Requested size: 146.46985pt x 163.09964pt.
+<img/grady.jpg, id=119, 304.88907pt x 138.5175pt>
 File: img/grady.jpg Graphic file (type jpg)
 <use img/grady.jpg>
-Package pdftex.def Info: img/grady.jpg  used on input line 213.
-(pdftex.def)             Requested size: 146.46985pt x 82.19698pt.
+Package pdftex.def Info: img/grady.jpg  used on input line 214.
+(pdftex.def)             Requested size: 146.46985pt x 66.54681pt.
 
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 218.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 218.
-
-Missing character: There is no ° in font cmr9!
-
-Underfull \hbox (badness 2744) in paragraph at lines 218--219
-[]\T1/Merriweather-OsF/m/n/9 (+20) Realizando os mesmos procedimento com o
+Underfull \hbox (badness 1331) in paragraph at lines 219--220
+[]\T1/Merriweather-OsF/m/n/9 (+20) Realizando os mesmos procedimentos com o
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+[]\T1/Merriweather-OsF/m/n/9 (+20) Inicialmente, é necessário fazer um
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 227--228
+\T1/Merriweather-OsF/m/n/9 (+20) arredondamento do ângulo obtido por meio do
+ []
+
+<img/imgSu.png, id=125, 304.88907pt x 321.45094pt>
+File: img/imgSu.png Graphic file (type png)
+<use img/imgSu.png>
+Package pdftex.def Info: img/imgSu.png  used on input line 235.
+(pdftex.def)             Requested size: 244.11394pt x 257.38182pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 235--236
+ [][] 
+ []
+
+
+Underfull \vbox (badness 1609) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (17.5pt): 
+ Make it at least 18.07214pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4 <./img/1im.jpg> <./img/grady.jpg> <./img/imgSu.png>]
+<img/imgLi.png, id=139, 292.84406pt x 319.1925pt>
+File: img/imgLi.png Graphic file (type png)
+<use img/imgLi.png>
+Package pdftex.def Info: img/imgLi.png  used on input line 261.
+(pdftex.def)             Requested size: 244.11394pt x 266.08887pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 261--262
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/imgLi2.png, id=141, 103.88812pt x 169.38281pt>
+File: img/imgLi2.png Graphic file (type png)
+<use img/imgLi2.png>
+Package pdftex.def Info: img/imgLi2.png  used on input line 270.
+(pdftex.def)             Requested size: 97.64407pt x 159.2095pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 277--278
 \T1/Merriweather-OsF/m/n/9 (+20) Com esse intuito, foram realizadas pesquisas e
 
  []
 
 
-Underfull \hbox (badness 2197) in paragraph at lines 246--247
+Underfull \hbox (badness 2197) in paragraph at lines 282--283
 \T1/Merriweather-OsF/m/n/9 (+20) apenas com elementos binários. Utilizando a
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 246--247
+Underfull \hbox (badness 1281) in paragraph at lines 282--283
 \T1/Merriweather-OsF/m/n/9 (+20) dessa matriz, é um valor do sistema RGB. Na
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (17.5pt): 
- Make it at least 18.07214pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4 <./img/gradiente.png> <./img/1im.jpg> <./img/grady.jpg>]
-Underfull \hbox (badness 2980) in paragraph at lines 250--251
+Underfull \hbox (badness 2980) in paragraph at lines 286--287
 \T1/Merriweather-OsF/m/n/9 (+20) Retomando um dos objetivos específicos deste
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 254--255
-\T1/Merriweather-OsF/m/n/9 (+20) objeto. Dessa maneira, com a informação da
- []
-
-<img/01-IMAGEM1.jpg, id=136, 568.37344pt x 265.74281pt>
-File: img/01-IMAGEM1.jpg Graphic file (type jpg)
-<use img/01-IMAGEM1.jpg>
-Package pdftex.def Info: img/01-IMAGEM1.jpg  used on input line 258.
-(pdftex.def)             Requested size: 146.46985pt x 68.48326pt.
-<img/02-TABELA1.JPG, id=137, 909.3975pt x 315.42844pt>
-File: img/02-TABELA1.JPG Graphic file (type jpg)
-<use img/02-TABELA1.JPG>
-Package pdftex.def Info: img/02-TABELA1.JPG  used on input line 267.
-(pdftex.def)             Requested size: 146.46985pt x 50.80167pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img/03-TABELA2.JPG, id=138, 907.89188pt x 316.93407pt>
-File: img/03-TABELA2.JPG Graphic file (type jpg)
-<use img/03-TABELA2.JPG>
-Package pdftex.def Info: img/03-TABELA2.JPG  used on input line 274.
-(pdftex.def)             Requested size: 146.46985pt x 51.13121pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 281--282
-\T1/Merriweather-OsF/m/n/9 (+20) relação inicial entre pixels e centímetros a s
-er
- []
-
-<img/04-IMAGEM2.JPG, id=141, 299.61937pt x 278.54062pt>
-File: img/04-IMAGEM2.JPG Graphic file (type jpg)
-<use img/04-IMAGEM2.JPG>
-Package pdftex.def Info: img/04-IMAGEM2.JPG  used on input line 285.
-(pdftex.def)             Requested size: 146.46985pt x 136.16733pt.
-
-Underfull \hbox (badness 2096) in paragraph at lines 290--291
-\T1/Merriweather-OsF/m/n/9 (+20) 0,091 centímetros por pixel. Esta relação foi
- []
-
-
-Underfull \hbox (badness 1112) in paragraph at lines 292--293
-\T1/Merriweather-OsF/m/n/9 (+20) ao analisar a imagem completa, a presença de
- []
-
-
-Underfull \vbox (badness 7851) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (17.5pt): 
- Make it at least 18.07214pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[5 <./img/01-IMAGEM1.jpg> <./img/02-TABELA1.JPG> <./img/03-TABELA2.JPG> <./img/
-04-IMAGEM2.JPG>]
-<img/05-IMAGEM3.jpg, id=151, 943.27406pt x 322.95656pt>
-File: img/05-IMAGEM3.jpg Graphic file (type jpg)
-<use img/05-IMAGEM3.jpg>
-Package pdftex.def Info: img/05-IMAGEM3.jpg  used on input line 296.
-(pdftex.def)             Requested size: 244.11394pt x 83.57741pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 296--297
- [][] 
- []
-
-<img/06-IMAGEM4.jpg, id=152, 286.82156pt x 213.04594pt>
-File: img/06-IMAGEM4.jpg Graphic file (type jpg)
-<use img/06-IMAGEM4.jpg>
-Package pdftex.def Info: img/06-IMAGEM4.jpg  used on input line 303.
-(pdftex.def)             Requested size: 146.46985pt x 108.79826pt.
-<img/07-IMAGEM5.jpg, id=157, 465.23813pt x 146.79843pt>
-File: img/07-IMAGEM5.jpg Graphic file (type jpg)
-<use img/07-IMAGEM5.jpg>
-Package pdftex.def Info: img/07-IMAGEM5.jpg  used on input line 314.
-(pdftex.def)             Requested size: 244.11394pt x 77.02553pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 314--315
- [][] 
- []
-
-
-Underfull \hbox (badness 1688) in paragraph at lines 319--320
-[]\T1/Merriweather-OsF/m/n/9 (+20) Por fim, reduzindo a região de interesse, e
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<img/T4.JPG, id=159, 815.29594pt x 277.035pt>
-File: img/T4.JPG Graphic file (type jpg)
-<use img/T4.JPG>
-Package pdftex.def Info: img/T4.JPG  used on input line 323.
-(pdftex.def)             Requested size: 244.11394pt x 82.94627pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 323--324
+
+Package Fancyhdr Warning: \headheight is too small (17.5pt): 
+ Make it at least 18.07214pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <./img/imgLi.png> <./img/imgLi2.png>]
+Underfull \hbox (badness 1715) in paragraph at lines 290--291
+\T1/Merriweather-OsF/m/n/9 (+20) objeto. Dessa maneira, com a informação da
+ []
+
+<img/01-IMAGEM1.jpg, id=154, 568.37344pt x 265.74281pt>
+File: img/01-IMAGEM1.jpg Graphic file (type jpg)
+<use img/01-IMAGEM1.jpg>
+Package pdftex.def Info: img/01-IMAGEM1.jpg  used on input line 294.
+(pdftex.def)             Requested size: 146.46985pt x 68.48326pt.
+<img/02-TABELA1.JPG, id=155, 909.3975pt x 315.42844pt>
+File: img/02-TABELA1.JPG Graphic file (type jpg)
+<use img/02-TABELA1.JPG>
+Package pdftex.def Info: img/02-TABELA1.JPG  used on input line 303.
+(pdftex.def)             Requested size: 146.46985pt x 50.80167pt.
+<img/03-TABELA2.JPG, id=156, 907.89188pt x 316.93407pt>
+File: img/03-TABELA2.JPG Graphic file (type jpg)
+<use img/03-TABELA2.JPG>
+Package pdftex.def Info: img/03-TABELA2.JPG  used on input line 310.
+(pdftex.def)             Requested size: 146.46985pt x 51.13121pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 317--318
+\T1/Merriweather-OsF/m/n/9 (+20) relação inicial entre pixeis e centímetros a s
+er
+ []
+
+<img/04-IMAGEM2.JPG, id=159, 299.61937pt x 278.54062pt>
+File: img/04-IMAGEM2.JPG Graphic file (type jpg)
+<use img/04-IMAGEM2.JPG>
+Package pdftex.def Info: img/04-IMAGEM2.JPG  used on input line 321.
+(pdftex.def)             Requested size: 146.46985pt x 136.16733pt.
+
+Underfull \hbox (badness 2096) in paragraph at lines 326--327
+\T1/Merriweather-OsF/m/n/9 (+20) 0,091 centímetros por pixel. Esta relação foi
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 328--329
+\T1/Merriweather-OsF/m/n/9 (+20) ao analisar a imagem completa, a presença de
+ []
+
+<img/05-IMAGEM3.jpg, id=161, 943.27406pt x 322.95656pt>
+File: img/05-IMAGEM3.jpg Graphic file (type jpg)
+<use img/05-IMAGEM3.jpg>
+Package pdftex.def Info: img/05-IMAGEM3.jpg  used on input line 332.
+(pdftex.def)             Requested size: 244.11394pt x 83.57741pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 332--333
  [][] 
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/06-IMAGEM4.jpg, id=162, 286.82156pt x 213.04594pt>
+File: img/06-IMAGEM4.jpg Graphic file (type jpg)
+<use img/06-IMAGEM4.jpg>
+Package pdftex.def Info: img/06-IMAGEM4.jpg  used on input line 339.
+(pdftex.def)             Requested size: 146.46985pt x 108.79826pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1681) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (17.5pt): 
+ Make it at least 18.07214pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6 <./img/01-IMAGEM1.jpg> <./img/02-TABELA1.JPG> <./img/03-TABELA2.JPG> <./img/
+04-IMAGEM2.JPG>]
+<img/07-IMAGEM5.jpg, id=177, 465.23813pt x 146.79843pt>
+File: img/07-IMAGEM5.jpg Graphic file (type jpg)
+<use img/07-IMAGEM5.jpg>
+Package pdftex.def Info: img/07-IMAGEM5.jpg  used on input line 350.
+(pdftex.def)             Requested size: 244.11394pt x 77.02553pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 350--351
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 355--356
+[]\T1/Merriweather-OsF/m/n/9 (+20) Por fim, reduzindo a região de interesse, e
+ []
+
+<img/T4.JPG, id=179, 815.29594pt x 277.035pt>
+File: img/T4.JPG Graphic file (type jpg)
+<use img/T4.JPG>
+Package pdftex.def Info: img/T4.JPG  used on input line 359.
+(pdftex.def)             Requested size: 244.11394pt x 82.94627pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 359--360
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 (example_latex.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 21--24
 []\T1/Merriweather-OsF/m/n/9 (+20) Gonzalez, R. C. and Woods, R. C. (2010).
  []
@@ -1986,15 +2016,15 @@ Package Fancyhdr Warning: \headheight is too small (17.5pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6 <./img/05-IMAGEM3.jpg> <./img/06-IMAGEM4.jpg> <./img/07-IMAGEM5.jpg> <./img/
+[7 <./img/05-IMAGEM3.jpg> <./img/06-IMAGEM4.jpg> <./img/07-IMAGEM5.jpg> <./img/
 T4.JPG>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
  (example_latex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 366.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 366.
 Package rerunfilecheck Info: File `example_latex.out' has not changed.
-(rerunfilecheck)             Checksum: 3A6F8EE5CBA50C4BFA62C48FCCBE813B;635.
+(rerunfilecheck)             Checksum: 5F84A4F3617BD8904EF8263DCB743AAC;636.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2002,13 +2032,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 28963 strings out of 492970
- 529553 string characters out of 3126593
- 667766 words of memory out of 3000000
- 32192 multiletter control sequences out of 15000+200000
- 582871 words of font info for 218 fonts, out of 3000000 for 9000
+ 28998 strings out of 492970
+ 530622 string characters out of 3126593
+ 668142 words of memory out of 3000000
+ 32211 multiletter control sequences out of 15000+200000
+ 583823 words of font info for 224 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,13n,102p,1384b,873s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,13n,102p,855b,873s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/jjade/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
 c}{C:/Users/jjade/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/merriweathe
 r/mwth_ywgpba.enc}{C:/Users/jjade/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
@@ -2024,9 +2054,9 @@ Users/jjade/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb><C:/Users/jjade/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy9.pfb><C:/Users/jjade/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/lm/lmtt9.pfb>
-Output written on example_latex.pdf (6 pages, 1440466 bytes).
+Output written on example_latex.pdf (7 pages, 1534585 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 50339 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 50354 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -22,4 +22,9 @@ Gonzalez, R.~C. \harvardand\ Woods, R.~C.  \harvardyearleft
   2010\harvardyearright .
 \newblock {\em Processamento digital de imagens}, 3 edn, Gabriela Trevisan.
 
+\harvarditem{Morgan et~al.}{2008}{morgan2008tecnicas}
+Morgan, J. et~al.  \harvardyearleft 2008\harvardyearright .
+\newblock T{\'e}cnicas de segmenta{\c{c}}{\~a}o de imagens na gera{\c{c}}{\~a}o
+  de programas para m{\'a}quinas de comando num{\'e}rico.
+
 \end{thebibliography}
